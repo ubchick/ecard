@@ -1,16 +1,10 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Send Alert">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+    
+    <center style="padding:50px;">
+      <button class="button button-outline button-positive round">
+        Send Alert
+      </button>
+    </center>
   </ion-content>
 </ion-view>

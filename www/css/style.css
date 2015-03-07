@@ -14,3 +14,29 @@ name {
 .title {
 	font-weight: 500;
 }
+
+.alert {
+	border-radius: 300px;
+	padding: 100px;
+}
+
+/* circular button */
+.round {
+    display:block;
+    width:150px;
+    height:150px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #464646;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round:hover {
+    background: #262626;
+}
+/* End circular button */
