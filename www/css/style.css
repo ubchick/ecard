@@ -1,1 +1,12 @@
 /* Empty. Add your own CSS if you like */
+.profile, .info {
+	text-align: center;
+}
+
+.profile img {
+	border-radius: 100px;
+}
+
+name {
+	font-weight: bold;
+}
