@@ -1,4 +1,4 @@
-<ion-view view-title="My E-Card">
+<ion-view view-title="My E-Card" ng-app="" ng-controller="DashCtrl">
   <ion-content class="padding">
    
     <!-- Profile Pic -->
@@ -6,9 +6,9 @@
       <img src="http://placehold.it/70x70">
     </div>
     <div class="info">
-      <name>Full Name</name>
+      <name ng-model="user.name">{{user.name}}</name>
       <br>
-      E-mail
+      <email ng-model="user.email">{{user.email}}</email>
     </div>
 
     <div class="list card">
@@ -16,25 +16,25 @@
       <a href="#" class="item item-icon-left">
         <i class="icon ion-ios7-telephone"></i>
         <span class="title">Emergency Contact</span>
-        <br>Name
-        <br>Number
+        <br>{{user.ename1}}
+        <br>{{user.enum1}}
       </a>
 
      <a href="#" class="item item-icon-left">
         <i class="icon ion-ios7-telephone"></i>
         <span class="title">Emergency Contact</span>
-        <br>Name
-        <br>Number
+        <br>{{user.ename2}}
+        <br>{{user.enum2}}
       </a>
 
       <a href="#" class="item item-icon-left">
         <i class="icon ion-ios7-telephone"></i>
         <span class="title">Emergency Contact</span>
-        <br>Name
-        <br>Number
+        <br>{{user.ename3}}
+        <br>{{user.enum3}}
       </a>
 
-</div>
+    </div>
   </ion-content>
 </ion-view>
 

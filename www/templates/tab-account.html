@@ -1,37 +1,48 @@
-<ion-view view-title="E-Card Editor">
+<ion-view view-title="E-Card Editor" ng-app="" ng-controller="AccountCtrl">
   <ion-content>
 <div class="list">
 
     <label class="item item-input item-stacked-label">
       <span class="input-label">Full Name</span>
-      <input type="text" placeholder="Liz Brown">
+      <input type="text" placeholder="Liz Brown" ng-model="user.name">
+      Full Name: {{user.name}} !
     </label>
 
     <label class="item item-input item-stacked-label">
       <span class="input-label">Email</span>
-      <input type="text" placeholder="john@suhr.com">
+      <input type="text" placeholder="john@suhr.com" ng-model="user.email">
+      Email: {{user.email}} !
     </label>
 
     <label class="item item-input item-stacked-label">
       <span class="input-label">Emergency Contact</span>
-      <input type="text" placeholder="Full Name">
-      <input type="text" placeholder="Number">
+      <input type="text" placeholder="Full Name" ng-model="user.ename1">
+      <input type="text" placeholder="Number" ng-model="user.enum1">
+      Full Name: {{user.ename1}} !
+      <br>
+      Number: {{user.enum1}} !
     </label>
 
     <label class="item item-input item-stacked-label">
       <span class="input-label">Emergency Contact</span>
-      <input type="text" placeholder="Full Name">
-      <input type="text" placeholder="Number">
+      <input type="text" placeholder="Full Name" ng-model="user.ename2">
+      <input type="text" placeholder="Number" ng-model="user.enum2">
+      Full Name: {{user.ename2}} !
+      <br>
+      Number: {{user.enum2}} !
     </label>
 
     <label class="item item-input item-stacked-label">
       <span class="input-label">Emergency Contact</span>
-      <input type="text" placeholder="Full Name">
-      <input type="text" placeholder="Number">
+      <input type="text" placeholder="Full Name" ng-model="user.ename3">
+      <input type="text" placeholder="Number" ng-model="user.enum3">
+      Full Name: {{user.ename3}} !
+      <br>
+      Number: {{user.enum3}} !
     </label>
     
     <div class="padding-horizontal">
-    <button class="button button-block button-positive">
+    <button class="button button-block button-positive" ng-click="update(user)">
       Save
     </button>
 
